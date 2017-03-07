@@ -1,0 +1,27 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>2.12 Complete example</h3>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+left to right direction
+skinparam packageStyle rectangle
+actor customer
+actor clerk
+rectangle checkout {
+customer -- (checkout)
+(checkout) .> (payment) : include
+(help) .> (checkout) : extends
+(checkout) -- clerk
+}
+@enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-014.png" />
+    </div>
+
+</div>

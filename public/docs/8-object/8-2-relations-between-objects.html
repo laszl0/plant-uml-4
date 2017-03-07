@@ -1,0 +1,38 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>8.1 Definition of objects</h3>
+        <p>Relations between objects are defined using the following symbols :</p>
+        <p>Extension <|-- <img src="/docs/8-object/img/extends01.png" /></p>
+        <p>Composition *-- <img src="/docs/8-object/img/sym03.png" /></p>
+        <p>Aggregation o-- <img src="/docs/8-object/img/sym01.png" /></p>
+        <p>It is possible to replace -- by .. to have a dotted line.</p>
+        <p>Knowing those rules, it is possible to draw the following drawings.</p>
+        <p>It is possible a add a label on the relation, using ”:”, followed by the text of the label.</p>
+        <p>For cardinality, you can use double-quotes "" on each side of the relation.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                object Object01
+                object Object02
+                object Object03
+                object Object04
+                object Object05
+                object Object06
+                object Object07
+                object Object08
+
+                Object01 <|-- Object02
+                Object03 *-- Object04
+                Object05 o-- "4" Object06
+                Object07 .. Object08 : some labels
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/8-object/img/s3-object-diagram-001.png" />
+    </div>
+
+</div>

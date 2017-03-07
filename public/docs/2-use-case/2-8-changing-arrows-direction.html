@@ -1,0 +1,68 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>2.8 Changing arrows direction</h3>
+        <p>By default, links between classes have two dashes -- and are vertically oriented.</p>
+        <p> It is possible to use horizontal link by putting a single dash (or dot) like this:</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                :user: --> (Use case 1)
+                :user: -> (Use case 2)
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-007.png" />
+    </div>
+    <div class="sixteen wide column">
+        <p>You can also change directions by reversing the link:</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                (Use case 1) <.. :user:
+                (Use case 2) <- :user:
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-008.png" />
+    </div>
+    <div class="sixteen wide column">
+        <p>It is also possible to change arrow direction by adding left,right,up or down keywords inside the arrow:</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                :user: -left-> (dummyLeft)
+                :user: -right-> (dummyRight)
+                :user: -up-> (dummyUp)
+                :user: -down-> (dummyDown)
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-009.png" />
+    </div>
+    <div class="sixteen wide column">
+        <p>You can shorten the arrow by using only the first character of the direction (for example,
+-d-
+instead
+of
+-down-
+) or the two first characters (
+-do-
+).</p>
+<p>Please note that you should not abuse this functionality :
+Graphviz
+gives usually good results without
+tweaking.</p>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>2.5 Extension</h3>
+        <p>If one actor/use case extends another one, you can use the symbol <|-- (which stands for).</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                :Main Admin: as Admin
+                (Use the application) as (Use)
+                User <|-- Admin
+                (Start) <|-- (Use)
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-004.png" />
+    </div>
+
+</div>

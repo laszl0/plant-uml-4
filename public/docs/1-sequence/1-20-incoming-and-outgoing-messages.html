@@ -1,0 +1,53 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.20 Incoming and outgoing messages</h3>
+        <p>You can use incoming or outgoing arrows if you want to focus on a part of the diagram.</p>
+        <p>Use square brackets to denote the left ”[” or the right ”]” side of the diagram.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                [-> A: DoWork
+                activate A
+                A -> A: Internal call
+                activate A
+                A ->] : << createRequest >>
+                A<--] : RequestCreated
+                deactivate A
+                [<- A: Done
+                deactivate A
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-024.png" />
+    </div>
+    <div class="sixteen wide column">
+        <p>You can also have the following syntax:</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                [-> Bob
+                [o-> Bob
+                [o->o Bob
+                [x-> Bob
+                [<- Bob
+                [x<- Bob
+                Bob ->]
+                Bob ->o]
+                Bob o->o]
+                Bob ->x]
+                Bob <-]
+                Bob x<-]
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-025.png" />
+    </div>
+</div>

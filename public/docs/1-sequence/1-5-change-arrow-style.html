@@ -1,0 +1,35 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.5 Change arrow style</h3>
+        <p>You can change arrow style by several ways:</p>
+        <ol class="ui list">
+            <li value="*">add a final <b>x</b> to denote a lost message</li>
+            <li value="*">use <b>\</b> or <b>/</b> instead of <b<</b> or <b>></b> to have only the bottom or top part of the arrow</li>
+            <li value="*">repeat the arrow head (for example, >> or // ) head to have a thin drawing</li>
+            <li value="*">use -- instead of - to have a dotted arrow</li>
+            <li value="*">add a final "o" at arrow head</li>
+            <li value="*">use bidirectional arrow</li>
+        </ol>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                Bob ->x Alice
+                Bob -> Alice
+                Bob ->> Alice
+                Bob -\ Alice
+                Bob \\- Alice
+                Bob //-- Alice
+                Bob ->o Alice
+                Bob o\\-- Alice
+                Bob <-> Alice
+                Bob <->o Alice
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-005.png" />
+    </div>
+</div>

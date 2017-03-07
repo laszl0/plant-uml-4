@@ -1,0 +1,43 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>2.11 Skinparam</h3>
+        <p>You can use the skinparam command to change colors and fonts for the drawing.</p>
+        <p>You can use this command :</p>
+        <ol class="ui list">
+            <li value="*">In the diagram definition, like any other commands,</li>
+            <li value="*">In an included file,</li>
+            <li value="*">In a configuration file, provided in the command line or the ANT task.</li>
+        </ol>
+        <p>You can define specific color and fonts for stereotyped actors and usecases.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                skinparam handwritten true
+                skinparam usecase {
+                BackgroundColor DarkSeaGreen
+                BorderColor DarkSlateGray
+                BackgroundColor<< Main >> YellowGreen
+                BorderColor<< Main >> YellowGreen
+                ArrowColor Olive
+                ActorBorderColor black
+                ActorFontName Courier
+                ActorBackgroundColor << Human >> Gold
+                }
+                User << Human >>
+                :Main Database: as MySql << Application >>
+                (Start) << One Shot >>
+                (Use the application) as (Use) << Main >>
+                User -> (Start)
+                User --> (Use)
+                MySql --> (Use)
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-013.png" />
+    </div>
+
+</div>

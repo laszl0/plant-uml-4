@@ -1,0 +1,29 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.8 Splitting diagrams</h3>
+        <p>The <b>newpage</b> keyword is used to split a diagram into several images.</p>
+        <p>You can put a title for the new page just after the newpage keyword.</p>
+        <p>This is very handy with Word to print long diagram on several pages.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                Alice -> Bob : message 1
+                Alice -> Bob : message 2
+                newpage
+                Alice -> Bob : message 3
+                Alice -> Bob : message 4
+                newpage A title for the\nlast page
+                Alice -> Bob : message 5
+                Alice -> Bob : message 6
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-011.png" />
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-011-001.png" />
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-011-002.png" />
+    </div>
+</div>

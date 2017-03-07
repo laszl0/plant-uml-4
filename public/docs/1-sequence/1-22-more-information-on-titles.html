@@ -1,0 +1,58 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.22 More information on titles</h3>
+        <p>You can use creole formatting in the title.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                title __Simple__ **communication** example
+                Alice -> Bob: Authentication Request
+                Bob -> Alice: Authentication Response
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-029.png" />
+    </div>
+    <div class="sixteen wide column">
+        <p>You can add newline using \n in the title description.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                title __Simple__ communication example\non several lines
+                Alice -> Bob: Authentication Request
+                Bob -> Alice: Authentication Response
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-030.png" />
+    </div>
+    <div class="sixteen wide column">
+        <p>You can also define title on several lines using title and end title keywords.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                title
+                <u>Simple</u> communication example
+                on <i>several</i> lines and using <font color=red>html</font>
+                This is hosted by <img:sourceforge.jpg>
+                end title
+                Alice -> Bob: Authentication Request
+                Bob -> Alice: Authentication Response
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-031.png" />
+    </div>
+</div>

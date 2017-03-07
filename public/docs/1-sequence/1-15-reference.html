@@ -1,0 +1,25 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.15 Reference</h3>
+        <p>You can use reference in a diagram, using the keyword ref over.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                participant Alice
+                actor Bob
+                ref over Alice, Bob : init
+                Alice -> Bob : hello
+                ref over Bob
+                This can be on
+                several lines
+                end ref
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-018.png" />
+    </div>
+</div>

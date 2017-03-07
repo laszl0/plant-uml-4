@@ -1,0 +1,26 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.17 Space</h3>
+        <p>You can use ||| to indicate some spacing in the diagram.</p>
+        <p>It is also possible to specify a number of pixel to be used.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                Alice -> Bob: message 1
+                Bob --> Alice: ok
+                |||
+                Alice -> Bob: message 2
+                Bob --> Alice: ok
+                ||45||
+                Alice -> Bob: message 3
+                Bob --> Alice: ok
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-020.png" />
+    </div>
+</div>

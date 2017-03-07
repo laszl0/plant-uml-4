@@ -1,0 +1,88 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.25 Skinparam</h3>
+        <p>You can use the skinparam command to change colors and fonts for the drawing.</p>
+        <p>You can use this command:</p>
+        <ol class="ui list">
+            <li value="*">In the diagram definition, like any other commands,</li>
+            <li value="*">In an included file,</li>
+            <li value="*">In a configuration file, provided in the command line or the ANT task.</li>
+        </ol>
+        <p>You can also change other rendering parameter, as seen in the following examples:</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                skinparam sequenceArrowThickness 2
+                skinparam roundcorner 20
+                skinparam maxmessagesize 60
+                skinparam sequenceParticipant underline
+                actor User
+                participant "First Class" as A
+                participant "Second Class" as B
+                participant "Last Class" as C
+                User -> A: DoWork
+                activate A
+                A -> B: Create Request
+                activate B
+                B -> C: DoWork
+                activate C
+                C --> B: WorkDone
+                destroy C
+                B --> A: Request Created
+                deactivate B
+                A --> User: Done
+                deactivate A
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-034.png" />
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                skinparam backgroundColor #EEEBDC
+                skinparam handwritten true
+                skinparam sequence {
+                ArrowColor DeepSkyBlue
+                ActorBorderColor DeepSkyBlue
+                LifeLineBorderColor blue
+                LifeLineBackgroundColor #A9DCDF
+                ParticipantBorderColor DeepSkyBlue
+                ParticipantBackgroundColor DodgerBlue
+                ParticipantFontName Impact
+                ParticipantFontSize 17
+                ParticipantFontColor #A9DCDF
+                ActorBackgroundColor aqua
+                ActorFontColor DeepSkyBlue
+                ActorFontSize 17
+                ActorFontName Aapex
+                }
+                actor User
+                participant "First Class" as A
+                participant "Second Class" as B
+                participant "Last Class" as C
+                User -> A: DoWork
+                activate A
+                A -> B: Create Request
+                activate B
+                B -> C: DoWork
+                activate C
+                C --> B: WorkDone
+                destroy C
+                B --> A: Request Created
+                deactivate B
+                A --> User: Done
+                deactivate A
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-035.png" />
+    </div>
+</div>

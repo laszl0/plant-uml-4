@@ -1,0 +1,59 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.2 Declaring participant</h3>
+        <p>It is possible to change participant order using the <b>participant</b> keyword.</p>
+        <p>It is also possible to use other keywords to declare a participant:</p>
+        <ol class="ui list">
+            <li value="*">actor</li>
+            <li value="*">boundary</li>
+            <li value="*">control</li>
+            <li value="*">entity</li>
+            <li value="*">database</li>
+        </ol>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                actor Foo1
+                boundary Foo2
+                control Foo3
+                entity Foo4
+                database Foo5
+                Foo1 -> Foo2 : To boundary
+                Foo1 -> Foo3 : To control
+                Foo1 -> Foo4 : To entity
+                Foo1 -> Foo5 : To database
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-001.png" />
+    </div>
+    <div class="ten wide column">
+        <p>You can rename a participant using the <b>as</b> keyword.</p>
+        <p>You can also change the background color of actor or participant.</p>
+        <pre>
+            <code class="ui code">
+                @startuml
+                actor Bob #red
+                ' The only difference between actor
+                'and participant is the drawing
+                participant Alice
+                participant "I have a really\nlong name" as L #99FF99
+                /' You can also declare:
+                participant L as "I have a really\nlong name"  #99FF99
+                '/
+                Alice->Bob: Authentication Request
+                Bob->Alice: Authentication Response
+                Bob->L: Log transaction
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-002.png" />
+    </div>
+
+</div>

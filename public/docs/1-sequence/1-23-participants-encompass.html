@@ -1,0 +1,25 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.23 Participants encompass</h3>
+        <p>It is possible to draw a box around some participants, using box and end box commands.</p>
+        <p>You can add an optional title or a optional background color, after the box keyword.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                box "Internal Service" #LightBlue
+                participant Bob
+                participant Alice
+                end box
+                participant Other
+                Bob -> Alice : hello
+                Alice -> Other : hello
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-032.png" />
+    </div>
+</div>

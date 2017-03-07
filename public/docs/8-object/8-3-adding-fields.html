@@ -1,0 +1,39 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>8.3 Adding fields</h3>
+        <p>To declare fields, you can use the symbol ":" followed by the field’s name.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                object user
+                user : name = "Dummy"
+                user : id = 123
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/8-object/img/s3-object-diagram-002.png" />
+    </div>
+    <div class="sixteen wide column">
+        <p>It is also possible to ground between brackets {} all fields.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                object user {
+                name = "Dummy"
+                id = 123
+                }
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/8-object/img/s3-object-diagram-003.png" />
+    </div>
+
+</div>

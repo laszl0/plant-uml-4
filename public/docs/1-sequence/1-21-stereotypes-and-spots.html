@@ -1,0 +1,54 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.21 Stereotypes and Spots</h3>
+        <p>It is possible to add stereotypes to participants using << and >>.</p>
+        <p>In the stereotype, you can add a spotted character in a colored circle using the syntax(X,color).</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                participant "Famous Bob" as Bob << Generated >>
+                participant Alice << (C,#ADD1B2) Testable >>
+                Bob->Alice: First message
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-026.png" />
+    </div>
+    <div class="sixteen wide column">
+        <p>By default, the guillemet character is used to display the stereotype.</p>
+        <p>You can change this behavious using the skinparam guillemet:</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                skinparam guillemet false
+                participant "Famous Bob" as Bob << Generated >>
+                participant Alice << (C,#ADD1B2) Testable >>
+                Bob->Alice: First message
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-027.png" />
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                participant Bob << (C,#ADD1B2) >>
+                participant Alice << (C,#ADD1B2) >>
+                Bob->Alice: First message
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-028.png" />
+    </div>
+</div>

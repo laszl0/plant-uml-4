@@ -1,0 +1,24 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.12 Changing notes shape</h3>
+        <p>You can use hnote and rnote keywords to change note shapes.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                caller -> server : conReq
+                hnote over caller : idle
+                caller <- server : conConf
+                rnote over server
+                "r" as rectangle
+                "h" as hexagon
+                endrnote
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-015.png" />
+    </div>
+</div>

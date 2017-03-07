@@ -1,0 +1,29 @@
+
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.10 Notes on messages</h3>
+        <p>It is possible to put notes on message using the note left or note right keywords just after the message.</p>
+        <p>You can have a multi-line note using the end note keywords.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                Alice->Bob : hello
+                note left: this is a first note
+                Bob->Alice : ok
+                note right: this is another note
+                Bob->Bob : I am thinking
+                note left
+                a note
+                can also be defined
+                on several lines
+                end note
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-013.png" />
+    </div>
+</div>

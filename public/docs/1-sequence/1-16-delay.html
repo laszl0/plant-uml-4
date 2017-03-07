@@ -1,0 +1,22 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.16 Delay</h3>
+        <p>You can use ... to indicate a delay in the diagram. And it is also possible to put a message with this delay.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                Alice -> Bob: Authentication Request
+                ...
+                Bob --> Alice: Authentication Response
+                ...5 minutes latter...
+                Bob --> Alice: Bye !
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-019.png" />
+    </div>
+</div>

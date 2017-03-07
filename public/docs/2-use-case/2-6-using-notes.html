@@ -1,0 +1,34 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>2.6 Using notes</h3>
+        <p>You can use the:</p>
+        <p>note left of, note right of, note top of, note bottom of</p>
+        <p>keywords to define notes related to a single object.</p>
+        <p>A note can be also define alone with the note keywords, then linked to other objects using the .. symbol.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                :Main Admin: as Admin
+                (Use the application) as (Use)
+                User -> (Start)
+                User --> (Use)
+                Admin ---> (Use)
+                note right of Admin : This is an example.
+                note right of (Use)
+                A note can also
+                be on several lines
+                end note
+                note "This note is connected\nto several objects." as N2
+                (Start) .. N2
+                N2 .. (Use)
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-005.png" />
+    </div>
+
+</div>

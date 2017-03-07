@@ -1,0 +1,44 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.9 Grouping message</h3>
+        <p>It is possible to group messages together using the following keywords:</p>
+        <ol class="ui list">
+            <li value="*">alt/else</li>
+            <li value="*">opt</li>
+            <li value="*">loop</li>
+            <li value="*">par</li>
+            <li value="*">break</li>
+            <li value="*">critical</li>
+            <li value="*">group, followed by a text to be displayed</li>
+        </ol>
+        <p>It is possible a add a text that will be displayed into the header (except for group).</p>
+        <p>The end keyword is used to close the group.</p>
+        <p>Note that it is possible to nest groups.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                Alice -> Bob: Authentication Request
+                alt successful case
+                Bob -> Alice: Authentication Accepted
+                else some kind of failure
+                Bob -> Alice: Authentication Failure
+                group My own label
+                Alice -> Log : Log attack start
+                loop 1000 times
+                Alice -> Bob: DNS Attack
+                end
+                Alice -> Log : Log attack end
+                end
+                else Another type of failure
+                Bob -> Alice: Please repeat
+                end
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-012.png" />
+    </div>
+</div>

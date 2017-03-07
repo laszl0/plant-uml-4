@@ -1,0 +1,24 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>2.4 Basic example</h3>
+        <p>To link actors and use cases, the arrow -- > is used.</p>
+        <p>The more dashes "-" in the arrow, the longer the arrow.</p>
+        <p>You can add a label on the arrow, by adding a ”:” character in the arrow definition.</p>
+        <p>In this example, you see that User has not been defined before, and is used as an actor.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                User -> (Start)
+                User --> (Use the application) : A small label
+                :Main Admin: ---> (Use the application) : This is\nyet another\nlabel
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-003.png" />
+    </div>
+
+</div>

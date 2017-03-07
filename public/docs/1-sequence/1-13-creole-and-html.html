@@ -1,0 +1,42 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.13 Creole and HTML</h3>
+        <p>It is also possible to use creole formatting:</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                participant Alice
+                participant "The **Famous** Bob" as Bob
+                Alice -> Bob : hello --there--
+                ... Some ~~long delay~~ ...
+                Bob -> Alice : ok
+                note left
+                This is **bold**
+                This is //italics//
+                This is ""monospaced""
+                This is --stroked--
+                This is __underlined__
+                This is ~~waved~~
+                end note
+                Alice -> Bob : A //well formatted// message
+                note right of Alice
+                This is <back:cadetblue><size:18>displayed</size></back>
+                __left of__ Alice.
+                end note
+                note left of Bob
+                <u:red>This</u> is <color #118888>displayed</color>
+                **<color purple>left of</color> <s:red>Alice</strike> Bob**.
+                end note
+                note over Alice, Bob
+                <w:#FF33FF>This is hosted</w> by <img sourceforge.jpg>
+                end note
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-016.png" />
+    </div>
+</div>

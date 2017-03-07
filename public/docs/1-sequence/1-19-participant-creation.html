@@ -1,0 +1,24 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.19 Participant creation</h3>
+        <p>You can use the create keyword just before the first reception of a message to emphasize the fact that this message is actually creating this new object.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                Bob -> Alice : hello
+                create Other
+                Alice -> Other : new
+                create control String
+                Alice -> String
+                note right : You can also put notes!
+                Alice --> Bob : ok
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-023.png" />
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.14 Divider</h3>
+        <p>If you want, you can split a diagram using == separator to divide your diagram into logical steps.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                == Initialization ==
+                Alice -> Bob: Authentication Request
+                Bob --> Alice: Authentication Response
+                == Repetition ==
+                Alice -> Bob: Another authentication Request
+                Alice <-- Bob: another authentication Response
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram-017.png" />
+    </div>
+</div>

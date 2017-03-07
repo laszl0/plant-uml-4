@@ -1,0 +1,26 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>1.1 Basic examples</h3>
+        <p>The sequence -> is used to draw a message between two participants. Participants do not have to be explicitly declared</p>
+        <p>To have a dotted arrow, you use <b>--></b></p>
+        <p>It is also possible to use <b><-</b> and <--.</p>
+        <p>That does not change the drawing, but may improve readability.</p>
+        <p>Note that this is only true for sequence diagrams, rules are different for the other diagrams.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                Alice -> Bob: Authentication Request
+                Bob --> Alice: Authentication Response
+                Alice -> Bob: Another authentication Request
+                Alice <-- Bob: another authentication Response
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/1-sequence/img/s3-sequence-diagram.png" />
+    </div>
+
+</div>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>plant-uml-4.me</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.js"></script>
+
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+
+  <div class="ui top fixed icon menu">
+    <a href="/" class="item">plant-uml-4.me</a>
+
+    <div class="right menu">
+      <a class="item">
+        <i class="help icon"></i>
+      </a>
+      <a class="item">
+        <i class="user icon"></i>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="ui vertical editor segment">
+    <div class="ui section divider"></div>
+    <div class="ui stackable divided grid">
+      <div class="seven wide column">
+
+        <div id="my-editor-change-progress" class="ui top attached progress" data-value="1" data-total="10">
+          <div class="bar"></div>
+        </div>
+        <div id="my-editor">
+          @startuml
+          Bob -[#red]> Alice : hello
+          Alice -[#0000FF]->Bob : ok
+          @enduml</div>
+
+      </div>
+      <div class="nine wide column">
+        <div id="my-preview-change-progress" class="ui top attached progress" data-value="1" data-total="10">
+          <div class="bar"></div>
+        </div>
+        <div id="my-preview">
+          <img src="/docs/img/logo.png" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ui vertical docs segment" style="min-height: 110px;">
+    <div class="ui dimmer">
+      <div class="ui indeterminate text loader">Preparing Files</div>
+    </div>
+    <div class="ui stackable divided grid">
+      <div class="sixteen wide borderless column" style="padding-top: 0em;">
+        <div class="ui title1 secondary pointing menu">
+          <a href="/docs/index.html" target="docs-frame1" class="item">v.8056</a>
+          <a href="/docs/1-sequence/index.html" target="docs-frame1" class="item">1. Sequence</a>
+          <a href="/docs/2-use-case/index.html" target="docs-frame1" class="item">2. Use Case</a>
+          <a href="/docs/3-class/index.html" target="docs-frame1" class="item"><strike>3. Class</strike></a>
+          <a href="/docs/4-activity/index.html" target="docs-frame1" class="item"><strike>4. Activity</strike></a>
+          <a href="/docs/5-activity-beta/index.html" target="docs-frame1" class="item"><strike>5. Activity beta</strike></a>
+          <a href="/docs/6-component/index.html" target="docs-frame1" class="item"><strike>6. Component</strike></a>
+          <a href="/docs/7-state/index.html" target="docs-frame1" class="item"><strike>7. State</strike></a>
+          <a href="/docs/8-object/index.html" target="docs-frame1" class="item">8. Object</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="docs-frame1" class="ui stackable divided grid">
+    </div>
+
+  </div>
+
+  <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui horizontal small divided link list">
+        <a class="item" href="/contact.html">Contact</a>
+        <a class="item" href="/terms-and-conditions.html">Terms and Conditions</a>
+        <a class="item" href="/privacy-policy.html">Privacy Policy</a>
+        <div class="item">
+          <p>Credits for <a href="http://plantuml.com" target="_blank">PlantUML</a>
+          , <a href="https://ace.c9.io/" target="_blank">Ace Editor</a>
+          , <a href="http://semantic-ui.com/" target="_blank">Semantic UI</a>
+          , <a href="https://github.com/johan/js-deflate" target="_blank">Johan Sundström(js-deflate)</a>
+          , <a>unknown(ace-diagram-mode)</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/lib/rawdeflate.js"></script>
+  <script src="/lib/encode-uml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>
+  <script src="/lib/mode-diagram.js"></script>
+
+  <script src="/static/runtime.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>2.1 Usecases</h3>
+        <p>Use cases are enclosed using between parentheses (because two parentheses looks like an oval).</p>
+        <p>You can also use the usecase keyword to define a usecase</p>
+        <p>And you can define an alias, using the as keyword</p>
+        <p>This alias will be used latter, when defining relations.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                (First usecase)
+                (Another usecase) as (UC2)
+                usecase UC3
+                usecase (Last\nusecase) as UC4
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram.png" />
+    </div>
+
+</div>

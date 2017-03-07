@@ -1,0 +1,25 @@
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <h3>2.7 Stereotypes</h3>
+        <p>You can add stereotypes while defining actors and use cases using ”<<” and ”>>”.</p>
+    </div>
+    <div class="ten wide column">
+        <pre>
+            <code class="ui code">
+                @startuml
+                User << Human >>
+                :Main Database: as MySql << Application >>
+                (Start) << One Shot >>
+                (Use the application) as (Use) << Main >>
+                User -> (Start)
+                User --> (Use)
+                MySql --> (Use)
+                @enduml
+            </code>
+        </pre>
+    </div>
+    <div class="six wide column">
+        <img src="/docs/2-use-case/img/s3-use-case-diagram-006.png" />
+    </div>
+
+</div>
